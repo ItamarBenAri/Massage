@@ -1,0 +1,23 @@
+.OurServicesPage {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background: url('../../../Assets/Images/our-services-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.OurServicesPage h1 {
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.OurServicesPage h1 span {
+    background-color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}

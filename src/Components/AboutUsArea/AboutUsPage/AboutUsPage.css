@@ -1,0 +1,65 @@
+.AboutUsPage {
+    padding: 100px 30px 40px 30px;
+    background: url('../../../Assets/Images/our-services-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.AboutUsPage h1 {
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.AboutUsPage h1 span {
+    background-color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+
+.AboutUsPage p {
+    color: #555;
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 25px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.AboutUsPage .image-text-pair {
+    display: flex;
+    align-items: center;
+}
+
+.AboutUsPage .image-text-pair img {
+    height: auto;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .AboutUsPage .image-text-pair {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .AboutUsPage .image-text-pair img {
+        width: 300px;
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .AboutUsPage .image-text-pair:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .AboutUsPage .image-text-pair:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .AboutUsPage .image-text-pair img {
+        width: 500px;
+        margin: 10px 0 10px 0;
+    }
+}

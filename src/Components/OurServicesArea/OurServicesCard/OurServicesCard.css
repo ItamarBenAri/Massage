@@ -1,0 +1,104 @@
+.OurServicesCard .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 284px;
+    margin: 20px;
+}
+
+.OurServicesCard .frontTitle {
+    font-size: 2.0em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    min-height: 80px;
+    max-height: 80px;
+    padding: 5px;
+}
+
+.OurServicesCard .backTitle {
+    font-size: 2.0em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    min-height: 40px;
+    max-height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.OurServicesCard .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.OurServicesCard .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.OurServicesCard .flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(203, 157, 124);
+    border-radius: 25px;
+}
+
+.OurServicesCard .flip-card-front {
+    background: linear-gradient(240deg,
+    rgb(244, 164, 96) 60%,
+    rgb(222, 184, 135) 88%,
+    rgb(210, 180, 140) 40%,
+    rgba(139, 69, 19, 0.603) 48%);
+    color: #FFFFFF;
+}
+
+.OurServicesCard .flip-card-back {
+    background: linear-gradient(240deg, rgb(255, 174, 145) 30%, coral 88%,
+    bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+}
+.OurServicesCard .flip-card-front span {
+    margin-right: 30px;
+}
+.OurServicesCard .flip-card-back span {
+    margin-right: 20px;
+    margin-bottom: 3px;
+}
+.OurServicesCard .flip-card-front .readMore {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    font-size: small;
+    color: brown;
+    margin: 10px 0 10px 10px;
+}
+.OurServicesCard .flip-card-back .readMore {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    font-size: small;
+    color: brown;
+    margin: 10px 0 10px 10px;
+    padding-right: 30px;  
+}

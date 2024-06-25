@@ -1,0 +1,8 @@
+.page404 {
+    margin-top: 60px;
+}
+
+.page404 > img {
+	width: 50%;
+    min-width: 350px;
+}

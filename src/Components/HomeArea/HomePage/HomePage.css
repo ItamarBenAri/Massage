@@ -1,0 +1,86 @@
+.HomePage .header {
+    background: url('../../../Assets/Images/home-background-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage .header .headerContent {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.HomePage .header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.HomePage .header p {
+    font-size: 1.5em;
+}
+.HomePage .content {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+.HomePage .content p {
+    max-width: 800px;
+    margin: 20px auto;
+}
+.HomePage .ourServicesContent {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+.HomePage .parallax1 {
+    background: url('../../../Assets/Images/home-background-2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+.HomePage .parallax2 {
+    background: url('../../../Assets/Images/home-background-2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+.HomePage .parallax3 {
+    background: url('../../../Assets/Images/home-background-3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+.HomePage .parallax4 {
+    background: url('../../../Assets/Images/home-background-4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+.HomePage .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.HomePage .images img {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .HomePage .header h1 {
+        font-size: 2em;
+    }
+    .HomePage .header p {
+        font-size: 1em;
+    }
+    .HomePage .images img {
+        width: 100%;
+        height: auto;
+    }
+}
