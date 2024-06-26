@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - - name: Verify environment variables
+      - name: Verify environment variables
         run: |
           if [ -z "$REACT_APP_RECAPTCHA_SITE_KEY" ]; then echo "REACT_APP_RECAPTCHA_SITE_KEY is not set"; else echo "REACT_APP_RECAPTCHA_SITE_KEY is set"; fi
           if [ -z "$REACT_APP_RECAPTCHA_SITE_SECRET" ]; then echo "REACT_APP_RECAPTCHA_SITE_SECRET is not set"; else echo "REACT_APP_RECAPTCHA_SITE_SECRET is set"; fi
