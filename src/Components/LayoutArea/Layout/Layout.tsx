@@ -8,13 +8,14 @@ import { ScrollToUpButton } from "../../SharedArea/ScrollToUpButton/ScrollToUpBu
 import { Toastify } from "../../SharedArea/Toastify/Toastify";
 import { useEffect, useState } from "react";
 import { LoadingProgressPage } from "../../SharedArea/LoadingProgressPage/LoadingProgressPage";
+import { appConfig } from "../../../Utils/AppConfig";
 
 function Layout(): JSX.Element {
     const [docReady, setDocReady] = useState<boolean>(false);
     useEffect(() => {
         window.addEventListener('load', ()=>{
             setDocReady(true);
-            alert(process.env.REACT_APP_RECAPTCHA_SITE_KEY);
+            alert(appConfig.recaptchaSiteKey);
         });
     }, []);
     return (
