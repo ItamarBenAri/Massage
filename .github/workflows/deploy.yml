@@ -31,7 +31,7 @@ jobs:
           echo "ACTIONS_DEPLOY_KEY=${{ secrets.ACTIONS_DEPLOY_KEY }}" >> .env
 
       - name: Build project
-        env:
+        with:
           GENERATE_SOURCEMAP: false
           REACT_APP_RECAPTCHA_SITE_KEY: ${{ secrets.REACT_APP_RECAPTCHA_SITE_KEY }}
           REACT_APP_RECAPTCHA_SITE_SECRET: ${{ secrets.REACT_APP_RECAPTCHA_SITE_SECRET }}
