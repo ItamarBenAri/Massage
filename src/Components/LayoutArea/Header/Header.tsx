@@ -10,7 +10,7 @@ import AppComponentsStyle from "../../../Theme/AppComponentsStyle";
 function Header(): JSX.Element {
     // Defined component variables:
     const pages = [ // App pages
-        { name: "דף הבית", link: "Massage", icon: <Home /> },
+        { name: "דף הבית", link: "home", icon: <Home /> },
         { name: "השירותים שלנו", link: "services", icon: <MedicalServices /> },
         { name: "אודותינו", link: "about-us", icon: <Info /> },
         { name: "גלריה", link: "gallery", icon: <Collections /> },
