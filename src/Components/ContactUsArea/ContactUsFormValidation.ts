@@ -35,8 +35,8 @@ class ContactUsFormValidation {
             message: "הודעה חייבת לכלול לפחות 5 תווים"
         },
         maxLength: {
-            value: 50,
-            message: "הודעה יכולה לכלול עד 50 תווים"
+            value: 2000,
+            message: "הודעה יכולה לכלול עד 2000 תווים"
         }
     }
     
