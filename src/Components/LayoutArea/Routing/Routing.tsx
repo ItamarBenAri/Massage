@@ -12,14 +12,14 @@ function Routing(): JSX.Element {
         <div className="Routing">
             <Routes>
                 {/* App Routes */}
-                <Route path="/Massage" element={<HomePage />} />
+                <Route path="/home" element={<HomePage />} />
                 <Route path="/services" element={<OurServicesPage />} />
                 <Route path="/about-us" element={<AboutUsPage />} />                
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/contact-us" element={<ContactUsPage />} />
 
                 {/* Default Route: */}
-                <Route path="/" element={<Navigate to="/Massage" />} />
+                <Route path="/" element={<Navigate to="/home" />} />
 
                 {/* Page not found route: */}
                 <Route path="*" element={<Page404 />} />

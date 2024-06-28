@@ -50,7 +50,7 @@ function Header(): JSX.Element {
                             variant="h6"
                             noWrap
                             component="a"
-                            onClick={()=> navigate("/Massage")}
+                            onClick={()=> navigate("/home")}
                             sx={AppComponentsStyle.menuTypographyCompanyNameMd}
                         >
                             אתר מסאג'
@@ -95,7 +95,7 @@ function Header(): JSX.Element {
                             variant="h5"
                             noWrap
                             component="a"
-                            onClick={()=> navigate("/Massage")}
+                            onClick={()=> navigate("/home")}
                             sx={AppComponentsStyle.menuTypographyCompanyNameSm}
                         >
                             אתר מסאג'
