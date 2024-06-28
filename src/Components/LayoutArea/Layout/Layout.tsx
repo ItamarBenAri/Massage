@@ -10,14 +10,14 @@ import { useEffect, useState } from "react";
 import { LoadingProgressPage } from "../../SharedArea/LoadingProgressPage/LoadingProgressPage";
 
 function Layout(): JSX.Element {
-    const [docReady, setDocReady] = useState<boolean>(false);
-    useEffect(() => {
-        window.addEventListener('load', ()=> setDocReady(true));
-    }, []);
+    // const [docReady, setDocReady] = useState<boolean>(false);
+    // useEffect(() => {
+    //     window.addEventListener('load', ()=> setDocReady(true));
+    // }, []);
     return (
         <div className="Layout">
-            {!docReady && <LoadingProgressPage />}
-            {docReady &&
+            {/* {!docReady && <LoadingProgressPage />} */}
+            {/* {docReady && */}
                 <div>
                     <header>
                         <Header />
@@ -33,7 +33,7 @@ function Layout(): JSX.Element {
                         <Copyrights />
                     </footer>
                 </div>
-            }
+            {/* } */}
         </div>
     );
 }
