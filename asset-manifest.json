@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Massage/static/css/main.c10e7082.css",
+    "main.js": "/Massage/static/js/main.ff448c5a.js",
+    "static/js/206.7c9b360f.chunk.js": "/Massage/static/js/206.7c9b360f.chunk.js",
+    "static/media/home-background-4.jpg": "/Massage/static/media/home-background-4.fce9fb9ea2dc05a0d984.jpg",
+    "static/media/massage-oil.jpg": "/Massage/static/media/massage-oil.f4784f5a46cfd42bea9d.jpg",
+    "static/media/hands-massage.jpg": "/Massage/static/media/hands-massage.8a42e4072342ae2b626a.jpg",
+    "static/media/back-massage.jpg": "/Massage/static/media/back-massage.f379a0e575bda48d964d.jpg",
+    "static/media/home-background-3.jpg": "/Massage/static/media/home-background-3.76d3583e404556370f90.jpg",
+    "static/media/massage-tools.jpg": "/Massage/static/media/massage-tools.088bb64756ea7e9298a6.jpg",
+    "static/media/our-services-background.jpg": "/Massage/static/media/our-services-background.32688293b4d9c4a60ca7.jpg",
+    "static/media/404.gif": "/Massage/static/media/404.434d4376b8e023482d5a.gif",
+    "static/media/home-background-1.jpg": "/Massage/static/media/home-background-1.6d96d038b59b4ea647a8.jpg",
+    "static/media/home-background-2.jpg": "/Massage/static/media/home-background-2.ceb4ee83be031dd25fbb.jpg",
+    "index.html": "/Massage/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.c10e7082.css",
+    "static/js/main.ff448c5a.js"
+  ]
+}
