@@ -6,8 +6,8 @@ import "./Layout.css";
 import { FloatingButton } from "../../SharedArea/FloatingButton/FloatingButton";
 import { ScrollToUpButton } from "../../SharedArea/ScrollToUpButton/ScrollToUpButton";
 import { Toastify } from "../../SharedArea/Toastify/Toastify";
-import { useEffect, useState } from "react";
-import { LoadingProgressPage } from "../../SharedArea/LoadingProgressPage/LoadingProgressPage";
+// import { useEffect, useState } from "react";
+// import { LoadingProgressPage } from "../../SharedArea/LoadingProgressPage/LoadingProgressPage";
 
 function Layout(): JSX.Element {
     // const [docReady, setDocReady] = useState<boolean>(false);
