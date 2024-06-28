@@ -11,10 +11,10 @@ function Header(): JSX.Element {
     // Defined component variables:
     const pages = [ // App pages
         { name: "דף הבית", link: "Massage", icon: <Home /> },
-        { name: "השירותים שלנו", link: "services", icon: <MedicalServices /> },
-        { name: "אודותינו", link: "about-us", icon: <Info /> },
-        { name: "גלריה", link: "gallery", icon: <Collections /> },
-        { name: "צור קשר", link: "contact-us", icon: <ContactMail /> }
+        { name: "השירותים שלנו", link: "Massage/services", icon: <MedicalServices /> },
+        { name: "אודותינו", link: "Massage/about-us", icon: <Info /> },
+        { name: "גלריה", link: "Massage/gallery", icon: <Collections /> },
+        { name: "צור קשר", link: "Massage/contact-us", icon: <ContactMail /> }
     ];
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const navigate = useNavigate();
