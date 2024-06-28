@@ -11,9 +11,9 @@ jobs:
 
     steps:
       - name: Configure git user
-      run: |
-        git config --global user.email "etamar234@gmail.com"
-        git config --global user.name "Itamar"
+        run: |
+          git config --global user.email "etamar234@gmail.com"
+          git config --global user.name "Itamar"
 
       - name: Checkout code
         uses: actions/checkout@v4
