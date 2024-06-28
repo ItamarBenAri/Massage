@@ -13,10 +13,10 @@ function Routing(): JSX.Element {
             <Routes>
                 {/* App Routes */}
                 <Route path="/Massage" element={<HomePage />} />
-                <Route path="/services" element={<OurServicesPage />} />
-                <Route path="/about-us" element={<AboutUsPage />} />                
-                <Route path="/gallery" element={<GalleryPage />} />
-                <Route path="/contact-us" element={<ContactUsPage />} />
+                <Route path="/Massage/services" element={<OurServicesPage />} />
+                <Route path="/Massage/about-us" element={<AboutUsPage />} />                
+                <Route path="/Massage/gallery" element={<GalleryPage />} />
+                <Route path="/Massage/contact-us" element={<ContactUsPage />} />
 
                 {/* Default Route: */}
                 <Route path="/" element={<Navigate to="/Massage" />} />
