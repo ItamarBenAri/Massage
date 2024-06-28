@@ -23,11 +23,11 @@ jobs:
 
       - name: Set environment variables
         run: |
-          echo "REACT_APP_RECAPTCHA_SITE_KEY=${{ secrets.REACT_APP_RECAPTCHA_SITE_KEY }}" >> .env
-          echo "REACT_APP_RECAPTCHA_SITE_SECRET=${{ secrets.REACT_APP_RECAPTCHA_SITE_SECRET }}" >> .env
-          echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
-          echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env
-          echo "REACT_APP_EMAILJS_PUBLIC_KEY=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}" >> .env
+          echo "REACT_APP_RECAPTCHA_SITE_KEY=${{ secrets.REACT_APP_RECAPTCHA_SITE_KEY }}"
+          echo "REACT_APP_RECAPTCHA_SITE_SECRET=${{ secrets.REACT_APP_RECAPTCHA_SITE_SECRET }}"
+          echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}"
+          echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}"
+          echo "REACT_APP_EMAILJS_PUBLIC_KEY=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}"
 
       - name: Build project
         env:
@@ -42,7 +42,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          gh_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
           allow_empty_commit: true
           publish_dir: ./build
