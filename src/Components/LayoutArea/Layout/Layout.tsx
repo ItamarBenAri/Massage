@@ -6,18 +6,30 @@ import "./Layout.css";
 import { FloatingButton } from "../../SharedArea/FloatingButton/FloatingButton";
 import { ScrollToUpButton } from "../../SharedArea/ScrollToUpButton/ScrollToUpButton";
 import { Toastify } from "../../SharedArea/Toastify/Toastify";
-// import { useEffect, useState } from "react";
-// import { LoadingProgressPage } from "../../SharedArea/LoadingProgressPage/LoadingProgressPage";
+import { useEffect, useState } from "react";
+import { LoadingProgressPage } from "../../SharedArea/LoadingProgressPage/LoadingProgressPage";
 
 function Layout(): JSX.Element {
-    // const [docReady, setDocReady] = useState<boolean>(false);
-    // useEffect(() => {
-    //     window.addEventListener('load', ()=> setDocReady(true));
-    // }, []);
+    const [docReady, setDocReady] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleLoad = () => setDocReady(true);
+
+        if (document.readyState === 'complete') {
+            handleLoad();
+        } else {
+            window.addEventListener('load', handleLoad);
+        }
+
+        return () => {
+            window.removeEventListener('load', handleLoad);
+        };
+    }, []);
+
     return (
         <div className="Layout">
-            {/* {!docReady && <LoadingProgressPage />} */}
-            {/* {docReady && */}
+            {!docReady && <LoadingProgressPage />}
+            {docReady &&
                 <div>
                     <header>
                         <Header />
@@ -33,7 +45,7 @@ function Layout(): JSX.Element {
                         <Copyrights />
                     </footer>
                 </div>
-            {/* } */}
+            }
         </div>
     );
 }
