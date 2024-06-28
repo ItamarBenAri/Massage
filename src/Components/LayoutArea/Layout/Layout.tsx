@@ -12,7 +12,10 @@ import { LoadingProgressPage } from "../../SharedArea/LoadingProgressPage/Loadin
 function Layout(): JSX.Element {
     const [docReady, setDocReady] = useState<boolean>(false);
     useEffect(() => {
-        window.addEventListener('load', ()=> setDocReady(true));
+        window.addEventListener('load', ()=>{
+            setDocReady(true);
+            alert(process.env.REACT_APP_RECAPTCHA_SITE_KEY);
+        });
     }, []);
     return (
         <div className="Layout">
