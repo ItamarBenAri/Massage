@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Massage/static/css/main.09dccc60.css",
-    "main.js": "/Massage/static/js/main.e9944ed5.js",
+    "main.css": "/Massage/static/css/main.c10e7082.css",
+    "main.js": "/Massage/static/js/main.07cb11a6.js",
     "static/js/206.7c9b360f.chunk.js": "/Massage/static/js/206.7c9b360f.chunk.js",
     "static/media/home-background-4.jpg": "/Massage/static/media/home-background-4.fce9fb9ea2dc05a0d984.jpg",
     "static/media/massage-oil.jpg": "/Massage/static/media/massage-oil.f4784f5a46cfd42bea9d.jpg",
@@ -16,7 +16,7 @@
     "index.html": "/Massage/index.html"
   },
   "entrypoints": [
-    "static/css/main.09dccc60.css",
-    "static/js/main.e9944ed5.js"
+    "static/css/main.c10e7082.css",
+    "static/js/main.07cb11a6.js"
   ]
 }
